@@ -12,7 +12,9 @@ int main(void)
     else
         if (salario > 1000)
         {
-            printf("Imposto = %.2f\n", salario*0.10);
+            printf("Imposto 10% = %.2f\n", salario*0.10);
         }else
-            printf("Imposto = %.2f\n", salario*0.05);        
+            printf("Imposto 5% = %.2f\n", salario*0.05);
+
+    return 0;        
 }
