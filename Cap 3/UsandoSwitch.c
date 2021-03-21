@@ -32,11 +32,6 @@ int main(void)
         break;
     default:
         printf("Valor invalido\n");
-        if (dia == default)
-        {
-            printf("Qual dia da semana?\n");
-            scanf("%d", &dia);
-        }
     }
     return 0;
 }
