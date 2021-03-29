@@ -1,21 +1,17 @@
-#include <stdio.h>
+#include<stdio.h>
+
+double fat(double n)
+{
+    if(n == 0 || n == 1)
+    return 1;
+    return n * fat (n - 1);
+}
 
 int main(void)
 {
-    int n, i = 1, aux = 1;
-
-    printf("numero para fatorial: ");
-    scanf("%d", &n);
-    if (n == 0)
-    {
-        printf("Fatorial de 0 = 1\n");
-    }
-    else
-        while (i <= n)
-        {
-            aux = aux * i;
-            printf("Fatorial = %d\n", aux);
-            i++;
-        }
+    double num = 0;
+    printf("Informe um numero: ");
+    scanf("%lf", &num);
+    printf("Fatorial de %.0lf = %.0lf\n", num, fat(num));
     return 0;
 }
