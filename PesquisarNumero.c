@@ -22,6 +22,6 @@ int main(void)
             qtdvezes++;
         }
     }
-    printf("o %d apareceu %d vezes!\n", n, qtdvezes);
+    printf("A quantidade de vezes que o numero %d aparece é: %d\n", n, qtdvezes);
     return 0;
 }
